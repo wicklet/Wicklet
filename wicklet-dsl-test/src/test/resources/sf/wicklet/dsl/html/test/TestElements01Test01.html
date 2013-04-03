@@ -1,0 +1,81 @@
+<?xml encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+    <head wicket:id="_header_"><title>Title</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link wicket:id="wicket_relative_path_prefix_" rel="stylesheet" type="text/css" href="../css/herbs.css" />
+        <base href="http://localhost/" />
+        <style wicket:id="_ScriptStyle" type="css/text">a { color: #ff0000; }</style>
+        <script wicket:id="_ScriptStyle" type="text/javascript">
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (
+        document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]
+    ).appendChild(ga);
+})();</script>
+        <pre>/*&lt;![CDATA[*/
+wicketAjaxDebugEnable=true;
+/*]]&gt;*/</pre>
+    </head>
+    <body background="white" class="body">
+        <div class="toc" />
+        <span class="bold" /><!-- comment -->cdata<?php echo ?>
+        <b>bold</b>
+        <h1>head1</h1>
+        <h2>head2</h2>
+        <h3>head2</h3>
+        <h4>head2</h4>
+        <h5>head2</h5>
+        <h6>head3</h6>
+        <p>paragraph<br />
+            <hr />
+        </p>
+        <blockquote>
+            <pre>
+this is the first line
+  this is the second line</pre>
+        </blockquote>
+        <a href="http://localhost/">click here</a><img src="/images/logo.png" />
+        <noscript>noscript</noscript>
+        <iframe><applet href="http://test">A applet</applet></iframe>
+        <object><embed href="/embed" /></object>
+        <ul>
+            <li>First line
+            Second line</li>
+            <li>Line</li>
+            <ol>Test</ol>
+        </ul>
+        <table summary="This is a test"><caption>caption text</caption>
+            <colgroup />
+            <colgroup span="3" />
+            <colgroup span="3" />
+            <thead>
+                <tr><th rowspan="2">Head1</th><th rowspan="2">Head2</th><th rowspan="2" colspan="3">Head3</th></tr>
+                <tr><th /><th /><th /></tr>
+            </thead>
+            <tbody>
+                <tr><td /><td>col2</td><td /></tr>
+                <tr><td /><td /><td /></tr>
+            </tbody>
+            <tfoot>
+                <tr><td /><td /><td /></tr>
+        </tfoot></table>
+        <form action="/form1" method="POST">
+            <input type="text" value="input1" />
+            <button name="submit" value="confirm" />
+            <optgroup>
+                <option label="option1" />
+                <option label="option2" selected="true" />
+                <option label="option3" />
+            </optgroup>
+            <select name="select1">
+                <option label="label1">option1</option>
+                <option>option2</option>
+                <option label="label3" selected="true" />
+            </select>
+            <textarea name="textarea1" cols="40" />
+        </form>
+    </body>
+</html>

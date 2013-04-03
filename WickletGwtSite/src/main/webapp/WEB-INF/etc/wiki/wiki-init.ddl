@@ -1,0 +1,10 @@
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/faq/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/documentation/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/a/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/p/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/u/', true, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/index.html', false, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/faq/index.html', false, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/documentation/index.html', false, '2000-01-01');
+INSERT INTO Wiki (username, path, isDir, lastModified) values ('editor', 'wiki/user/index.html', false, '2000-01-01');

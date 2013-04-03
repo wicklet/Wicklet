@@ -1,0 +1,53 @@
+{
+	LeftPanel : {
+		desc: "Home page left panel configuration",
+		testString: "teststring",
+		counter: 123,
+		visible: true,
+		opacity: 0.5123,
+		Indexes : {
+			Home : [
+				{
+					title : "Introduction",
+					path : "/WEB-INF/inc/intro.html",
+				},
+				{
+					title : "Projects",
+					path : "/WEB-INF/inc/projects.html",
+				},
+				{
+					title : "Sources",
+					path : "/WEB-INF/inc/sources.html",
+				},
+				{
+					title : "License",
+					path : "/WEB-INF/inc/license.html",
+				},
+				{
+					title : "Feedback",
+					path : "/WEB-INF/inc/feedback.html",
+				},
+			],
+			Wiki : [
+				{
+					title : "Home",
+					path : "/WEB-INF/wiki/index.html",
+				},
+				{
+					title : "Documentation",
+					path : "/WEB-INF/wiki/documentation/index.html",
+				},
+				{
+					title : "FAQ",
+					path : "/WEB-INF/wiki/faq/index.html",
+				},
+				{
+					title : "MyWiki",
+					path : "/WEB-INF/u/index.html",
+				},
+			],
+			Forum : [
+			],
+		},
+	},
+}

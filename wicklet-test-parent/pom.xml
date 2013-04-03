@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You should have received a copy of  the license along with this library.
+    You may also obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0.
+-->
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>sf.wicklet</groupId>
+        <artifactId>wicklet-parent</artifactId>
+        <version>1-SNAPSHOT</version>
+        <relativePath>../wicklet-parent/</relativePath>
+    </parent>
+    <artifactId>wicklet-test-parent</artifactId>
+    <packaging>pom</packaging>
+    <properties>
+        <versions.arquillianext>1-SNAPSHOT</versions.arquillianext>
+        <versions.arquillian-container>1.0.0.CR3-HACKED</versions.arquillian-container>
+        <versions.selenium>2.25.0</versions.selenium>
+        <versions.tomcat>7.0.32</versions.tomcat>
+        <versions.junit>4.10</versions.junit>
+        <versions.slf4j>1.6.4</versions.slf4j>
+    </properties>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+        </license>
+    </licenses>
+</project>

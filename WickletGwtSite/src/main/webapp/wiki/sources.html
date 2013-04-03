@@ -1,0 +1,41 @@
+<div>
+    <h1 class="title">Sources</h1>
+    <p>The sources are hosted at <code>https://github.com/wicklet/</code> .</p>
+
+    <h3>Building</h3>
+    <ul>
+        <li>To build from source, clone <code>Wicklet.git</code>, <code>WickletSupport.git</code> and <code
+        >WickletRelease.git</code>.</li>
+        <li>Copy the customized artifacts, that are not available from public repositories, at <code
+        >wicklet-release/src/main/resources/repository/*</code> to <code>~/.m2/repository/</code>. The <code
+        >wicklet-release/src/main/resources/patches/</code> directory has the patch files for building the customized
+        artifacts. Artifacts available from standard external repositories are not included. Either create a local
+        cache or access to external repositories, like maven central, is required for the dependencies.</li>
+        <li>To build with eclipse (tested with eclipse-3.7.2), import all projects as existing maven projects. Update
+        project configuration and perform maven clean and maven install in the <code>wicklet-release</code>
+        project.</li>
+        <li>To build with maven (tested with maven-3.0.4), run mvn clean; mvn install in the <code
+        >wicklet-release</code> project.</li>
+        <li>To run the arquillian and selenium tests, you need a tomcat7 installation in <code
+        >WickletGwtSiteTest/../opt/tomcat7/</code> with the <code>manager</code> webapp and a proper <code
+        >tomcat-users.xml</code>. You can find a sample <code>tomcat-users.xml</code> in <code
+        >wicklet-release/src/main/resources/tomcat7/conf/</code>. For selenium tests, you need a firefox profile with
+        javascript and cookies enabled at <code>WickletGwtSiteTest/../opt/firefox/7x16slsr.default/</code>. Simply copy
+        a firefox profile from you home directory would probably work.</li>
+    </ul>
+
+    <h3>Running</h3>
+    <ul>
+        <li>For a quick test, deploy the pre-built binary <code
+        >wicklet-release/src/main/resources/tomcat7/webapps/wicklet-site.war</code> to a tomcat7 installation, with
+        http port at 8080 and https port at 8443, and access <code>http://localhost:8080/wicklet-site/</code> with
+        firefox. The webapp contains the project documentation. Project documentation can also be found in the <code
+        >WickletGwtSite/src/main/webapp/wiki/</code> directory.</li>
+        <li>If built from source, deploy <code>WickletGwtSite/target/WickletGwtSite-&lt;version>.war</code> as <code
+        >wicklet-site.war</code>.</li>
+        <li>To try out the wiki, login as <code>editor</code> with password <code>editor</code>. To access the admin
+        page, login as <code>admin</code> with password <code>tomcat6</code>. Note that, the web server need write
+        access to the <code>wicklet-site</code> webapp directory in order for comment, wiki edit and database update to
+        work.</li>
+    </ul>
+</div>

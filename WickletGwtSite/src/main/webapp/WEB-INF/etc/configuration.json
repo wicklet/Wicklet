@@ -1,0 +1,44 @@
+{
+	WikiPage : {
+		Index : {
+			Home : [
+				{
+					title : "Home",
+					path : "wiki/index.html",
+				},
+				{
+					title: "Documentation",
+					path: "wiki/documentation/index.html",
+				},
+				{
+					title: "FAQ",
+					path: "wiki/faq/index.html",
+				},
+				{
+					title: "User",
+					path: "wiki/u/index.html",
+				},
+			],
+			Documentation : [
+				{
+					title: "Reference Guide",
+					path: "wiki/documentation/reference/index.html",
+				},
+				{
+					title: "Developer Guide",
+					path: "wiki/documentation/developer/index.html",
+				},
+			],
+			"Most Recent" : [
+				{
+					title: "intro",
+					path: "wiki/test/intro.html",
+				},
+				{
+					title: "projects",
+					path: "wiki/test/projects.html",
+				},
+			],
+		},
+	},
+}

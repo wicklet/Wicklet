@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You should have received a copy of  the license along with this library.
+    You may also obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0.
+-->
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>sf.wicklet</groupId>
+        <artifactId>wicklet-parent</artifactId>
+        <version>1-SNAPSHOT</version>
+        <relativePath>../wicklet-parent/</relativePath>
+    </parent>
+    <artifactId>wicklet-dsl</artifactId>
+    <packaging>jar</packaging>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+        <license>
+            <name>Apache License, Version 2.0</name>
+        </license>
+    </licenses>
+    <dependencies>
+        <dependency>
+            <groupId>sf.blacksun</groupId>
+            <artifactId>blacksun-util</artifactId>
+            <version>${versions.blacksun}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-core</artifactId>
+            <version>${versions.wicket}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-extensions</artifactId>
+            <version>${versions.wicket}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${versions.slf4j}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

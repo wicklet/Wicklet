@@ -1,0 +1,12 @@
+$('#testPanel > *:nth-child(odd)').click(
+function() {
+var content = $(this).next();
+var d = content.css('display');
+var save = content.attr('wicklet-save-display');
+if (d && d.toLowerCase() == 'none') {
+    content.css('display', save);
+    content.removeAttr('wicklet-save-display');
+} else {
+    content.css('display', 'none');
+    content.attr('wicklet-save-display', d);
+}});

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5"
+    xmlns="http://java.sun.com/xml/ns/javaee">
+    <display-name>WickletGwtSet</display-name>
+    <filter>
+        <filter-name>WickletGwtSite</filter-name>
+        <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+        <init-param>
+            <param-name>applicationClassName</param-name>
+            <param-value>sf.wicklet.gwt.site.server.WickletGwtSiteApplication</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignorePaths</param-name>
+            <param-value>/assets/</param-value>
+        </init-param>
+        <init-param>
+            <param-name>configuration</param-name>
+            <param-value>DEVELOPMENT</param-value>
+            <!-- <param-value>DEPLOYMENT</param-value> -->
+        </init-param>
+        <init-param>
+            <param-name>http-port</param-name>
+            <param-value>8080</param-value>
+        </init-param>
+        <init-param>
+            <param-name>https-port</param-name>
+            <param-value>8443</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>WickletGwtSite</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- Default page to serve -->
+    <!-- <welcome-file-list> <welcome-file>TestGwtAjax01.html</welcome-file> </welcome-file-list> -->
+</web-app>

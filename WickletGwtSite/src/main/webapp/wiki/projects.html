@@ -1,0 +1,110 @@
+<div>
+    <h1 class="title">Projects</h1>
+
+    <h3>wicket</h3>
+    <ul class="none">
+        <li>The hacked Wicket projects.</li>
+        <li>These are minimal changes to Wicket to allow other projects to work. In particular, it has refactored some
+        concrete API classes to interfaces. There is also an experimental extension that encode the page/component info
+        in URLs as an opaque ID. See <code
+        >org/apache/wicket/request/mapper/info/DefaultPageComponentInfoCodec.java</code> for details.</li>
+    </ul>
+
+    <h3>wicklet-dsl</h3>
+    <ul class="none">
+        <li>Domain Specific Languages (DSL) for HTML, CSS and scripts that provide an alternate way to generate the
+        template DOM and stylesheets. Instead of writing literal text or a separate HTML file and parse it to a DOM: 
+<pre>
+&lt;html>
+    &lt;head>...&lt;/head>
+    &lt;body>... &lt;div wicket:id="test">...&lt;/div>...&lt;/body>
+&lt;/html>
+</pre>
+        you write this Java code:
+<pre>
+html(
+    head(...), 
+    body(... component(WID.test).div(...) ...)
+);
+</pre>
+        that generates the DOM or component tree. Using DSL, you can leverage the Java programming language constructs
+        as well as assists from a modern Java IDE. The DSL for HTML is typically used for creating the template DOM,
+        either statically or dynamically. It can also be used for ahead of time generation of static web pages. The DSL
+        for CSS is typically used for ahead of time generation of the CSS stylesheets. The simplistic DSL for scripts
+        assists writing scripts in most readable form.</li>
+    </ul>
+
+    <h3>wicklet-ext</h3>
+    <ul class="none">
+        <li>The wicklet extensions.</li>
+    </ul>
+
+    <h1>Wicklet/GWT integration</h1>
+    <ul>
+        <li>GWT is a Java to Javascript compiler. It also provide a client side UI framework. Unfortunately, it has its
+        own event system. However, it support standard AJAX. With a little bit of interface code, it can works fine
+        with Wicklet at the server side. See <code>sf/wicklet/gwt/server/ajax/impl/GwtAjaxWickletTarget.java</code>,
+        <code>sf/wicklet/gwt/server/ajax/impl/GwtAjaxXmlTarget.java</code>, <code
+        >sf/wicklet/gwt/client/ajax/WickletAjax.java</code> and related classes for details. With Wicklet/GWT
+        integration, both the server side and the client side can be coded in Java.</li>
+        <li>Out of the box, GWT do not works well with HTML templates. But with a little bit of hack, it can. That
+        opens up the possibility of progressive enhancement of a site that can works with/without GWT. See <code
+        >sf.wicklet.gwt.client.dsl.gwt.widgets.WickletGwt.WickletTemplateFlowPanel</code> for more detail.</li>
+        <li>It is also possible to intermix Wicket components and GWT UI too. See <code
+        >sf/wicklet/site/gwt/login/client/WickletGwtSiteLogin.java</code> where it use the <code>WxSignInPanel</code>
+        component for login. See also <code>sf/wicklet/site/gwt/server/pages/s/Wikicomment.java</code> where GWT
+        request and submit a form using AJAX while Wicket form rendering and processing is used at the server side.</li
+        >
+    </ul>
+
+    <h3>WickletGwtClient</h3>
+    <ul>
+        <li>Client side GWT module for Wicklet/GWT integration.</li>
+    </ul>
+
+    <h3>WickletGwtServer</h3>
+    <ul>
+        <li>Server side code for Wicklet/GWT integration</li>
+    </ul>
+
+    <h3>WickletGwtShared</h3>
+    <ul>
+        <li>Shared code for WickletGwtClient and WickletGwtServer.</li>
+    </ul>
+
+    <h3>WickletGwtSite</h3>
+    <ul>
+        <li>Wicklet site using Wicklet/GWT. This is also the test driver. It try to make use of the various features
+        and see how to get certain thing done. It is neither secure or complete.</li>
+        <li>Here are some screenshots:
+        <table style="table-layout: fixed; margin: 10px 0px; padding: 4px;">
+            <tr>
+            <td>
+                <a href="assets/screenshots/WickletGwtSiteHome01.png" target="_blank"><img
+                src="assets/screenshots/128/WickletGwtSiteHome01.png" /></a>
+            </td>
+            <td>
+                <a href="assets/screenshots/WickletGwtSiteLogin01.png" target="_blank"><img
+                src="assets/screenshots/128/WickletGwtSiteLogin01.png" /></a>
+            </td>
+            <td>
+                <a href="assets/screenshots/WickletGwtSiteAdmin01.png" target="_blank"><img
+                src="assets/screenshots/128/WickletGwtSiteAdmin01.png" /></a>
+            </td>
+            <td>
+                <a href="assets/screenshots/WickletGwtSiteComment01.png" target="_blank"><img
+                src="assets/screenshots/128/WickletGwtSiteComment01.png" /></a>
+            </td>
+            <td>
+                <a href="assets/screenshots/WickletGwtSiteEdit01.png" target="_blank"><img
+                src="assets/screenshots/128/WickletGwtSiteEdit01.png" /></a>
+            </td>
+            </tr>
+        </table>
+        </li>
+    </ul>
+    <h1>Wish list</h1>
+    <ul>
+        <li>Use more interfaces, use less reflections.</li>
+    </ul>
+</div>

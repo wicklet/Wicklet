@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS Wiki (
+    id IDENTITY NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    path VARCHAR(255) NOT NULL,
+    isDir BOOLEAN NOT NULL,
+    lastModified TIMESTAMP NOT NULL
+);
